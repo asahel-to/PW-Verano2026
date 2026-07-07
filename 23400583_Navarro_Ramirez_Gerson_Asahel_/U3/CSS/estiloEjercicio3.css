@@ -1,0 +1,120 @@
+
+body{
+     background: linear-gradient(150deg, #b0d4f3, #eaaadc);
+}
+H1{
+    background: linear-gradient(150deg, #ff00cc, #3838ab);
+    color: #ffffff;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{
+    color: linear-gradient(150deg, #fb0fff, #0000ff);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+div {
+               
+                justify-content: center;
+                text-align: center;
+                 background: linear-gradient(150deg, #dd9dd0, #8e8eeb);
+                width: 50%;
+                align-items: center;
+                border-radius: 30px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 2px solid #7d2372;
+  }
+P{
+    color: #410303;
+    text-align: center;
+    font-family: ARIAL, Helvetica, sans-serif;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 80px;
+  
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+hr {
+
+    margin: 20px 0;
+    border: 2px solid #7d2372;   
+}
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    background-color: #ececff;
+
+}
+ th {
+    color: #ffffff;
+ background: linear-gradient(150deg, #ff00cc, #3838ab);
+    border: 1px solid #7d2372;
+    padding: 8px;
+    text-align: left;
+}
+td {
+    color: #000000;
+     background: linear-gradient(150deg, #d4e8f6, #9b9be8);
+    border: 1px solid #560a4d;
+    padding: 8px;
+}
+
+h3{
+    color: #000000;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+legend {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],input[type="number"],
+select,textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #1663e0;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+input[type="submit"] {
+    background-color: #dde4f3;
+    color: #0059ff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+input[type="reset"] {
+    background-color: #ffffff;
+    color: #005eff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}

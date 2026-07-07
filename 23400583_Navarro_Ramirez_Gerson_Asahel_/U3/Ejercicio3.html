@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Travel world</title>
+        <link rel="stylesheet" href="CSS/estiloEjercicio3.css">
+    </head>
+    <body>
+        <h1>Travel world</h1>
+            <p><strong>La mejor agencias de viajes </strong>para conocer los destinos mas increíbles de mexico y del mundo.</p>
+        
+            <hr>
+        <h2>Menú</h2>
+        <div>
+            <a href="#inicio">Inicio</a> |
+            <a href="#destinos">Destinos</a> |
+            <a href="#promociones">Promociones</a> |
+            <a href="#paqueteria">Paqueteria</a> |
+            <a href="#contacto">Contacto</a>
+            </div>
+            <hr>
+        <h2 id="inicio">Bienvenido</h2>
+            <p>en <strong>Travel world</strong> ofrecemos los mejores paquetes para toda la familia, Nuestro
+                objetivo es brindar la mejor experiencia de viaje con excelente 
+                servicios y precios accessibles.
+            </p>
+            
+            <img src="https://media.admagazine.com/photos/64417ad7180930e0ac310bc4/3:2/w_3000,h_2000,c_limit/Parque%20de%20Diversiones.jpg" width="500" height="300">
+            <hr>
+        <h2 id="destinos">Destinos populares</h2>
+        <div>
+            <ul>
+                <li>Cancun</li>
+                <li>Puerto Vallarta</li>
+                <li>Los cabos</li>
+                <li>Rivera Maya</li>
+            </ul>
+         </div>
+            <h2 id="pueblos_magicos"> pueblos mágicos</h2>
+            <div>
+            <ul>
+                <li>Tequila</li>
+                <li>Manzanita</li>
+                <li>Real de Catorce</li>
+                <li>Taxco</li>
+            </ul>
+            </div><hr>
+        <h2 id="promociones">Promociones</h2>
+            <p>Reserva durante un mes y obten un <strong>20% de descuento</strong> en paquetes seleccionados.
+            </p>
+            <p>los primeros 50 clientes recibiran un <em>tour gratuito</em> en su destino.</p>
+            <hr>   
+
+        <h2 id="paqueteria">Paquetes Disponibles</h2>
+            <table border="1">
+                <tr>
+                    <th>Destino</th>
+                    <th>Días</th>
+                    <th>Hotel</th>
+                    <th>Precio</th>
+                    
+                </tr>
+                <tr>
+                    <td>Cancun</td>
+                    <td>5 días</td>
+                    <td>5 estrellas</td>
+                    <td>$12,500</td>
+                </tr>
+                <tr>
+                    <td>Puerto Vallarta</td>
+                    <td>4 días</td>
+                    <td>4 estrellas</td>
+                    <td>$9,800</td>
+
+                </tr>
+
+                <tr>
+                    <td>Los cabos</td>
+                    <td>6 días</td>
+                    <td>5 estrellas</td>
+                    <td>$15,300</td>
+                </tr>
+                <tr>
+                    <td>Manzanita</td>
+                    <td>3 días</td>
+                    <td>cabaña</td>
+                    <td>$5,900</td>
+                </tr>
+                <tr>
+                    <td>Rivera Maya</td>
+                    <td>7 días</td>
+                    <td>todo incluido</td>
+                    <td>$18,900</td>
+                </tr>
+            </table>
+
+            <hr>
+
+        <h2>¿Por qué viajar con nosotros?</h2>
+           <div>
+            <UL>
+                <LI>Hoteles certificados</LI>
+                <LI>Guias Turisticos</LI>
+                <LI>Seguro Viajero</LI>
+                <LI>Atención 24/7</LI>  
+                <LI>Facilidad de pago</LI>
+                
+            </UL>
+           </div> <hr>
+        <h2>Formulario de reservación</h2>
+
+            <form action="">
+                <fieldset>
+                    <legend>Solicitud de Reservación</legend>
+                    <table border="1">
+                        <tr>
+                            <th colSpan="4">Nombre:</th>
+                           
+                        </tr>
+                        <tr>
+                            <td><label for="Nombre">Nombre:</label></td>
+                            <td><input type="text" id="Nombre" name="Nombre"></td>
+                            <td><label for="email">Correo Electrónico:</label></td>
+                            <td><input type="email" id="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="contraseña">Contraseña:</td></td>
+                            <td><input type="password" id="contraseña" name="contraseña"></td>
+                            <td><label for="Edad">Edad:</td></td>
+                            <td><input type="number" id="Edad" name="Edad" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Fecha de viaje">Fecha de Viaje:</td></td>
+                            <td><input type="date" id="Fecha de viaje" name="Fecha de viaje"></td>
+                            <td><label for="Hora de salida">Hora de Salida:</td></td>
+                            <td><input type="time" id="Hora de salida" name="Hora de salida"></td>
+                        </tr>
+                        <tr>
+                             <td><label for="Numero de viajeros">Número de Viajeros:</td></td>
+                             <td><input type="number" id="Numero de viajeros" name="Numero de viajeros" min="1"></td>
+                             <td><label for="Presupuesto">Presupuesto:</td></td>
+                            <td><input type="range" id="Presupuesto" name="Presupuesto" min="1000" max="50000"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Color">Color pulcera:</td></td>
+                            <td><input type="color" id="Color" name="Color"></td>
+                            <td><label for="Identificacion">Identificación:</td></td>
+                            <td><input type="file" id="Identificacion" name="Identificacion"></td>
+                        </tr>
+                        <tr>
+                            <th colSpan="4" >Servicios:</th>
+                        </tr>
+                        <tr>
+                            
+                            <td colSpan="4">
+                            <input type="checkbox" id="Guia turistico" name="Guia turistico">Transporte <br>
+                            <input type="checkbox" id="Guia turistico" name="Guia turistico">Hotel <br>
+                            <input type="checkbox" id="Guia turistico" name="Guia turistico">Desayuno <br>
+                            <input type="checkbox" id="Guia turistico" name="Guia turistico">Seguro de viaje <br>
+                            </td>
+                            
+                        </tr>
+                        <tr> <th colSpan="4" >Tipo habitación:</th></tr>
+                        <tr>
+                            <td colSpan="4">
+                            <input type="radio" id="Individual" name="Tipo habitación" value="Individual">Individual 
+                            <input type="radio" id="Doble" name="Tipo habitación" value="Doble">Doble 
+                            <input type="radio" id="Suite" name="Tipo habitación" value="Suite">Familiar 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Destino">Nombre:</label></td>
+                            <td><select name="" id="">
+                                <option value="">Cancún</option>
+                                <option value="">Puerto Vallarta</option>
+                                <option value="">Los cabos</option>
+                                <option value="">Manzanita</option>
+                                <option value="">Rivera maya</option>
+                            </select></td> 
+                            <td><label for="email">Forma de pago:</label></td>
+                            <td><select name="" id="">
+                                <option value="">Tarjeta de crédito</option>
+                                <option value="">Transferencia bancaria</option>
+                                <option value="">Efectivo</option>
+                            </select></td> 
+                        </tr>
+                        <tr>
+                                 <td><label for="Comentarios">Comentarios:</label></td>
+                                 <td colSpan="3"><textarea id="Comentarios" name="Comentarios" rows="4" cols="50"></textarea></td>
+                        </tr>
+                        <tr>
+                            <th colSpan="2"><input type="submit" value="Enviar"></th>
+                            <th colSpan="2"><input type="reset" value="Limpiar"></th>
+                        </tr>
+                
+                    </table>
+                </fieldset>
+
+            </form>
+
+            <hr>
+        <h2 id="contacto">Informacion de Contacto</h2>  
+            <p>Dirección: Av. Principal #100, Tepic, Nayarit</p>
+            <p>Teléfono: (311) 123-4567</p>
+            <p>Correo: Contacto@travelWorld.com</p>
+        <h3>Enlaces de interes</h3>
+           <div> <ul>
+                <li><a href="https://www.visitmexico.com/">Visit Mexico</a></li>
+                <li><a href="https://www.sectur.gob.mx/">Secretaría de Turismo</a></li>
+                <li><a href="https://www.gob.mx/sectur">Gobierno de México</a></li>
+            </ul></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
