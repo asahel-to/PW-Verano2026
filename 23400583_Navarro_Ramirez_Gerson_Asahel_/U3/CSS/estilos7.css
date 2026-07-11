@@ -1,0 +1,357 @@
+/*Parte genreal de todo*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #040714;
+            color: #f9f9f9;
+            overflow-x: hidden;
+        }
+
+        h2, h3 {
+            font-weight: 600;
+        }
+             /*banner de hero*/
+        .hero {
+            position: relative;
+            height: 80vh;
+            background-image: linear-gradient(to right, rgba(4, 7, 20, 0.8) 30%, rgba(4, 7, 20, 0)), url('../accesrss/assets/main-hero-background.png'); /*el degradadop*/
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 0 6%;
+        }
+
+        /*pirmer navegador*/
+        .header-nav {
+            position: absolute;
+            top: 20px;
+            right: 6%;
+        }
+
+        .btn-login {
+            background: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .logo-disney {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            line-height: 1.3;
+        }
+
+
+    /*form de suscripcion*/
+
+        .subscribe-form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .subscribe-form input {
+            flex: 1;
+            background-color: #31343e;
+            border: none;
+            padding: 15px;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .btn-subscribe {
+            background-color: #00d2f3;
+            color: #000;
+            border: none;
+            padding: 0 30px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+
+        .hero p {
+            font-size: 12px;
+            color: #a2a4b0;
+            margin-bottom: 30px;
+        }
+
+
+        /*imagen de los iconos*/
+        .icons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .icons img {
+            height: 30px;
+        }
+
+        /*DISNEY*/
+        .disney-section {
+            padding: 5% 6%;
+            text-align: center;
+        }
+
+        .disney-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        .disney-section subtitle {
+            color: #a2a4b0;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 25px;
+        }
+
+
+    /*img de starwars*/
+        .starw-banner {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .starw-banner img {
+            width: 100%;
+            display: block;
+        }
+
+        .text-starw{
+            position: absolute;
+            bottom: 30%;
+            left: 5%;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+
+        /* TOP*/
+        .top-section {
+            padding: 0 6% 5% 6%;
+        }
+
+        .grid-top {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 15px;
+        }
+
+        .card-top {
+            position: relative;
+            border-radius: 6px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .card-top:hover {
+            transform: scale(1.05);
+        }
+
+        .card-top img {
+            width: 100%;
+            display: block;
+        }
+
+     
+        .movie {
+            font-size: 12px;
+            margin-top: 8px;
+            text-align: center;
+            color: #f9f9f9;
+        }
+
+
+        /* TABLA DE PLANES */
+        .plans-section {
+            padding: 5% 6%;
+            text-align: center;
+            background: linear-gradient(to top, #040714, #090e26);
+        }
+
+        .plans-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .plans-section p {
+            color: #a2a4b0;
+            margin-bottom: 40px;
+        }
+
+        .table-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 20px;
+            border-bottom: 1px solid #1c1f2a;
+        }
+
+        th {
+            background-color: transparent;
+            text-align: center;
+            font-size: 14px;
+        }
+
+
+        /*Parte de los planes*/
+        .plan-header {
+            border-radius: 6px;
+            padding: 15px;
+            font-weight: bold;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .plan-premium { background-color: #0072ff; color: white; }
+        .plan-standard { background-color: #1c1f2a; color: white; }
+        .plan-anuncios { background-color: #1c1f2a; color: white; }
+
+        .precios {
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .tb-text {
+            max-width: 350px;
+            font-size: 14px;
+            color: #f9f9f9;
+            font-weight: 500;
+        }
+
+        .center-col {
+            text-align: center;
+            font-size: 16px;
+        }
+
+
+        /*la palomita*/
+        .check { 
+            color: #00ff66; font-weight: bold; 
+        }
+        /*el espacio*/
+        .dash { 
+            color: #ff3333; font-weight: bold; 
+        }
+
+
+
+
+        /*deportes*/
+        .sports-section {
+            padding: 5% 6%;
+        }
+
+        .sports-section h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .sports-section p {
+            color: #a2a4b0;
+            margin-bottom: 30px;
+        }
+
+        .sports-programs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1100px;
+        }
+
+        .sports-card {
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #1c1f2a;
+        }
+
+        .sports-card img {
+            width: 100%;
+            display: block;
+        }
+
+
+        /*PARTE D DISPOSITIVOS*/
+        .devices-section {
+            padding: 5% 6%;
+            text-align: center;
+        }
+
+        .devices-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .devices-section p {
+            color: #a2a4b0;
+            margin-bottom: 40px;
+        }
+
+        .devices-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .devices-container img {
+            width: 100%;
+            height: auto;
+        }
+
+
+
+        footer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 15px 20px;
+            gap: 15px; 
+        }
+
+        footer a, footer span {
+        text-decoration: none;
+        color: #71767b;
+        font-size: 13px;
+        }
+
+        footer a:hover {
+        text-decoration: underline;
+    }
