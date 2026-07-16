@@ -1,0 +1,624 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+    -webkit-font-smoothing: antialiased; /* Suavizado de bordes de letras en navegadores WebKit */
+}
+
+:root {
+    --color-text-dark: #1d1d1f;
+    --color-text-light: #f5f5f7;
+    --color-text-gray: #86868b;
+    --color-link: #0066cc;
+    --nav-height: 44px;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--color-text-dark);
+    overflow-x: hidden; /* Evita que aparezca la barra de desplazamiento horizontal */
+}
+
+a {
+    text-decoration: none; 
+    color: var(--color-link);
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+/* -----------------
+   CABECERA / NAVBAR FIJA (Menú Superior)
+ */
+header {
+    position: fixed; /* Se queda fijo en la pantalla al hacer scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--nav-height);
+    background-color: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(20px); 
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 9999; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.nav-container {
+    max-width: 1024px;
+    margin: 0 auto; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+}
+
+.nav-list {
+    list-style: none; /* Elimina los puntos viñeta de la lista */
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.nav-item a {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+.nav-item a:hover {
+    color: #000000;
+}
+
+.nav-icon svg {
+    fill: rgba(0, 0, 0, 0.8); /* Define el color del SVG */
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+}
+
+/*  ------------
+   BOTONES Y LLAMADOS A LA ACCIÓN (CTAs)
+   */
+.cta-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px; /* Espacio horizontal constante entre los botones */
+    margin-top: 18px;
+    z-index: 5;
+    position: relative;
+}
+
+.cta-btn-blue {
+    background-color: #0071e3;
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 980px; /* Bordes completamente redondeados */
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.cta-btn-blue:hover {
+    background-color: #0077ed;
+    text-decoration: none;
+}
+
+.cta-btn-light {
+    background-color: #0071e3;
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 980px;
+    font-size: 14px;
+}
+
+.cta-link-outline {
+    color: #0071e3;
+    border: 1px solid #0071e3; /* Botón transparente con contorno de color */
+    padding: 8px 18px;
+    border-radius: 980px;
+    font-size: 14px;
+}
+
+.cta-link-outline:hover {
+    background-color: rgba(0, 113, 227, 0.05); /* Relleno sumamente tenue en hover */
+    text-decoration: none;
+}
+
+.cta-link-outline-light {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 8px 18px;
+    border-radius: 980px;
+    font-size: 14px;
+}
+
+/* -------
+   ESTRUCTURA DE LAS SECCIONES HERO (Secciones grandes)
+  */
+.hero-section {
+    position: relative;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 75px;
+    margin-bottom: 12px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover; /* Adapta el fondo cubriendo todo el espacio */
+    background-position: center top;
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    line-height: 1.1;
+}
+
+.hero-title span {
+    font-weight: 300; /* Aplica peso ligero en spans secundarios */
+}
+
+.hero-subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 6px;
+    letter-spacing: .008em;
+}
+
+/* Imágenes específicas de fondo para cada sección */
+.hero-iphone {
+    background-image: url('https://www.apple.com/v/home/images/iphone-family/a/hero_iphone_family__be5jkzxszb1e_largetall.jpg');
+    margin-top: var(--nav-height); /* Desplaza para no colisionar con la barra fija */
+}
+
+.hero-macbook-air {
+    background-image: url('https://www.apple.com/v/home/images/macbook-air-m5/a/hero_macbook_air_m5__eb1idggd120y_largetall.jpg');
+}
+
+.hero-ipad-air {
+    background-image: url('https://www.apple.com/v/home/images/ipad-air-m4/a/hero_ipad_air_m4__gc1zddfs5tiu_largetall.jpg');
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+/* Contenedores secundarios de imágenes internas */
+.hero-image-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* ------------------------------------------
+   GRILLA DE 2 COLUMNAS (Mosaicos inferiores)
+ */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Divide horizontalmente en 2 columnas idénticas */
+    gap: 12px;
+    padding: 0 12px;
+    background-color: #ffffff;
+}
+
+.grid-item {
+    position: relative;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 45px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item-dark {
+    background-color: #000000;
+    color: var(--color-text-light);
+}
+
+.grid-item-light {
+    background-color: #fbfbfd;
+    color: var(--color-text-dark);
+}
+
+.grid-item-real-bg {
+    background-size: cover;
+    background-position: center;
+    padding-top: 0;
+}
+
+.dark-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Capa oscura translúcida */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.grid-subtitle {
+    font-size: 15px;
+    color: var(--color-text-gray);
+    max-width: 310px;
+    margin: 8px auto 0 auto;
+}
+
+.text-white {
+    color: #ffffff !important; /* Prioridad alta para anular estilos del tema claro */
+}
+
+.sub-brand {
+    font-size: 11px;
+    color: #e30000;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    display: block;
+    margin-top: 4px;
+}
+
+/* Contenedores para posicionar logotipos o recursos extra de las rejillas */
+.grid-image-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.grid-image-container-center {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.grid-img-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.apple-logo-img-trade {
+    height: 34px;
+    width: auto;
+    object-fit: contain;
+}
+
+.apple-logo-img {
+    height: 29px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* -------------------
+   SECCIÓN APPLE TV+ (Slider de contenido centrado de ancho completo)
+    */
+.tv-carousel-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw; /* Truco CSS para salir del contenedor principal y ser 100% pantalla */
+    margin-right: -50vw;
+    overflow: hidden;
+}
+
+.tv-track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.tv-card {
+    flex: 0 0 auto;
+    width: 470px;
+    height: 580px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Tarjeta central activa enfocada */
+.tv-card.active {
+    width: 980px;
+    opacity: 1;
+}
+
+.tv-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.85) 100%); /* Degradado para oscurecer la base */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.tv-badge {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.tv-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+.tv-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tv-btn {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 22px;
+    border-radius: 980px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.tv-btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+.tv-meta {
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333333;
+}
+
+/* ---------------------------
+   PIE DE PÁGINA / FOOTER (Rediseño Estilo Apple)
+   */
+footer {
+    background-color: #f5f5f7;
+    color: #86868b;
+    font-size: 11px;
+    padding: 20px 22px 30px 22px;
+    line-height: 1.6;
+}
+
+.footer-container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.footer-notes {
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+    color: #86868b;
+}
+
+.footer-notes p {
+    margin-bottom: 11px;
+}
+
+.footer-notes a {
+    color: #515154;
+    text-decoration: underline;
+}
+
+.footer-notes a:hover {
+    color: #1d1d1f;
+}
+
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas con el mismo ancho */
+    gap: 20px;
+    padding-bottom: 24px;
+}
+
+.footer-column-group {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-column-title {
+    color: #1d1d1f;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    color: #515154;
+}
+
+.footer-column a:hover {
+    color: #1d1d1f;
+    text-decoration: underline;
+}
+
+.footer-contact-text {
+    margin-top: 18px;
+    color: #86868b;
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 18px;
+}
+
+.footer-contact-text a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.footer-contact-text a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.footer-bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-copyright {
+    color: #86868b;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 0;
+}
+
+.footer-legal a {
+    color: #515154;
+    border-right: 1px solid #d2d2d7; /* Divide con barra vertical los enlaces de abajo */
+    padding: 0 10px;
+}
+
+.footer-legal a:first-child {
+    padding-left: 0;
+}
+
+.footer-legal a:last-child {
+    border: none;
+    padding-right: 0;
+}
+
+.footer-legal a:hover {
+    color: #1d1d1f;
+    text-decoration: underline;
+}
+
+.country-label {
+    font-weight: 400;
+    color: #515154;
+}
+
+.country-label:hover {
+    color: #1d1d1f;
+    text-decoration: underline;
+}
+
+/*--------------------
+   RESPONSIVO / MÓVILES (Media Queries)
+  */
+@media (max-width: 768px) {
+    /* Convierte la cuadrícula de productos en 1 sola columna para pantallas móviles */
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Disminuye el tamaño de los títulos principales en móviles */
+    .hero-title {
+        font-size: 40px;
+    }
+
+    /* Colapsa las 5 columnas del footer en 1 sola para que sea legible en móviles */
+    .footer-links-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Ajusta la orientación de la línea final en móviles */
+    .footer-bottom-line {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    /* Reduce el ancho de las tarjetas del carrusel para ajustarse a pantallas más pequeñas */
+    .tv-card {
+        width: 320px;
+    }
+    .tv-card.active {
+        width: 100vw;
+    }
+}
